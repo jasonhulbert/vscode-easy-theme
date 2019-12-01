@@ -23,7 +23,7 @@
 		"textPreformat.foreground": "<%= brightForeground %>",
 		"textSeparator.foreground": "<%= border %>",
 		"// Button Control": "//",
-		"button.background": "<%= accentAlpha60 %>",
+		"button.background": "<%= accent %>",
 		"button.foreground": "<%= altForeground %>",
 		"button.hoverBackground": "<%= accent %>",
 		"checkbox.background": "<%= altBackground %>",
