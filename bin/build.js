@@ -5,7 +5,7 @@ const { resolve } = require('path');
 const ejs = require('ejs');
 
 const themes = [{
-    outFile: resolve('./', 'themes/Trash Panda Theme - Dark.json'),
+    outFile: resolve('./', 'themes/Easy Theme - Dark.json'),
     data: require('../themes_data/dark.json')
 }];
 

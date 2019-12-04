@@ -1,7 +1,7 @@
 {
-    "name": "trash-panda-theme",
-    "displayName": "trash-panda-theme",
-    "description": "A theme for raccoons and other creatures of the night",
+    "name": "vscode-easy-theme",
+    "displayName": "vscode-easy-theme",
+    "description": "",
     "version": "0.0.1",
     "scripts": {
         "build": "./bin/build.js"
@@ -15,9 +15,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Trash Panda Theme - Dark",
+                "label": "Easy Theme - Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Trash Panda Theme - Dark.json"
+                "path": "./themes/Easy Theme - Dark.json"
             }
         ]
     },

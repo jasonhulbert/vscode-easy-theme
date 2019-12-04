@@ -4,6 +4,7 @@
 	"type": "<%= type %>",
 	"colors": {
 		"// Base": "//",
+		"focusBorder": "<%= accent %>",
 		"background": "<%= background %>",
 		"foreground": "<%= foreground %>",
 		"selection.background": "<%= border %>",
@@ -62,14 +63,14 @@
 		"progressBar.background": "<%= accent %>",
 		"// Lists & Trees": "//",
 		"list.activeSelectionBackground": "<%= accentAlpha60 %>",
-		"list.activeSelectionForeground": "<%= altForeground %>",
+		"list.activeSelectionForeground": "<%= brightForeground %>",
 		"list.dropBackground": "<%= accentAlpha60 %>",
 		"list.focusBackground": "<%= accentAlpha40 %>",
 		"list.focusForeground": "<%= altForeground %>",
 		"list.highlightForeground": "<%= brightForeground %>",
 		"list.hoverBackground": "<%= accentAlpha20 %>",
 		"list.hoverForeground": "<%= foreground %>",
-		"list.inactiveSelectionBackground": "<%= altBackground %>",
+		"list.inactiveSelectionBackground": "<%= accentAlpha40 %>",
 		"list.inactiveSelectionForeground": "<%= foreground %>",
 		"list.inactiveFocusBackground": "<%= accentAlpha20 %>",
 		"list.invalidItemForeground": "<%= red %>",
@@ -89,7 +90,7 @@
 		"activityBarBadge.background": "<%= accent %>",
 		"activityBarBadge.foreground": "<%= brightForeground %>",
 		"activityBar.activeBorder": "<%= accent %>",
-		"activityBar.activeBackground": "<%= accentAlpha20 %>",
+		"activityBar.activeBackground": "<%= accentAlpha40 %>",
 		"// Sidebar": "//",
 		"sideBar.background": "<%= background %>",
 		"sideBar.foreground": "<%= foreground %>",
@@ -103,33 +104,33 @@
 		"minimap.findMatchHighlight": "<%= brightForeground %>",
 		"minimap.selectionHighlight": "<%= accent %>",
 		"// Editor Group": "//",
-		"editorGroup.border": "<%= border %>",
+		"editorGroup.border": "<%= altBackground %>",
 		"editorGroup.dropBackground": "<%= accentAlpha60 %>",
 		"editorGroupHeader.noTabsBackground": "<%= background %>",
 		"editorGroupHeader.tabsBackground": "<%= background %>",
 		"editorGroupHeader.tabsBorder": "<%= border %>",
 		"editorGroup.emptyBackground": "<%= background %>",
 		"editorGroup.focusedEmptyBorder": "<%= border %>",
-		"tab.activeBackground": "<%= altBackground %>",
-		"tab.unfocusedActiveBackground": "<%= background %>",
+		"tab.activeBackground": "<%= accentAlpha40 %>",
 		"tab.activeForeground": "<%= brightForeground %>",
+		"tab.unfocusedActiveBackground": "<%= background %>",
 		"tab.border": "<%= background %>",
-		"tab.activeBorder": "<%= background %>",
-		"tab.unfocusedActiveBorder": "<%= border %>",
-		"tab.activeBorderTop": "<%= accent %>",
-		"tab.unfocusedActiveBorderTop": "<%= accentAlpha60 %>",
+		"tab.activeBorder": "<%= accent %>",
+		"tab.unfocusedActiveBorder": "<%= accentAlpha40 %>",
+		"tab.activeBorderTop": "<%= altBackground %>",
+		"tab.unfocusedActiveBorderTop": "<%= altBackground %>",
 		"tab.inactiveBackground": "<%= background %>",
 		"tab.inactiveForeground": "<%= foreground %>",
-		"tab.unfocusedActiveForeground": "<%= foreground %>",
+		"tab.unfocusedActiveForeground": "<%= altForeground %>",
 		"tab.unfocusedInactiveForeground": "<%= foreground %>",
-		"tab.hoverBackground": "<%= altBackground %>",
-		"tab.unfocusedHoverBackground": "<%= altBackground %>",
-		"tab.hoverBorder": "<%= background %>",
-		"tab.unfocusedHoverBorder": "<%= background %>",
-		"tab.activeModifiedBorder": "<%= background %>",
-		"tab.inactiveModifiedBorder": "<%= background %>",
-		"tab.unfocusedActiveModifiedBorder": "<%= background %>",
-		"tab.unfocusedInactiveModifiedBorder": "<%= background %>",
+		"tab.hoverBackground": "<%= accentAlpha20 %>",
+		"tab.unfocusedHoverBackground": "<%= accentAlpha20 %>",
+		"tab.hoverBorder": "<%= accentAlpha40 %>",
+		"tab.unfocusedHoverBorder": "<%= accentAlpha20 %>",
+		"tab.activeModifiedBorder": "<%= modified %>",
+		"tab.inactiveModifiedBorder": "<%= modifiedBackground %>",
+		"tab.unfocusedActiveModifiedBorder": "<%= modifiedBackground %>",
+		"tab.unfocusedInactiveModifiedBorder": "<%= modifiedBackground %>",
 		"editorPane.background": "<%= background %>",
 		"// Editor": "//",
 		"editor.background": "<%= altBackground %>",
@@ -161,7 +162,7 @@
 		"editor.rangeHighlightBorder": "<%= purpleAlpha80 %>",
 		"editorWhitespace.foreground": "<%= border %>",
 		"editorIndentGuide.background": "<%= border %>",
-		"editorIndentGuide.activeBackground": "<%= accentAlpha60 %>",
+		"editorIndentGuide.activeBackground": "<%= accentAlpha80 %>",
 		"editorRuler.foreground": "<%= border %>",
 		"editorCodeLens.foreground": "<%= submodule %>",
 		"editorLightBulb.foreground": "<%= accent %>",
@@ -198,6 +199,12 @@
 		"statusBarItem.activeBackground": "<%= accentAlpha80 %>",
 		"statusBarItem.hoverBackground": "<%= accentAlpha60 %>",
 		"statusBarItem.prominentForeground": "<%= brightForeground %>",
+		"// Title Bar": "//",
+		"titleBar.activeBackground": "<%= background %>",
+		"titleBar.activeForeground": "<%= foreground %>",
+		"titleBar.inactiveBackground:": "<%= background %>",
+		"titleBar.inactiveForeground:": "<%= foreground %>",
+		"titleBar.border": "<%= border %>",
 		"// Breadcrumb": "//",
 		"breadcrumb.foreground": "<%= comment %>",
 		"breadcrumb.background": "<%= altBackground %>",
@@ -212,7 +219,7 @@
 		"diffEditor.border": "<%= border %>",
 		"// Panel": "//",
 		"panel.foreground": "<%= foreground %>",
-		"panel.background": "<%= background %>",
+		"panel.background": "<%= altBackground %>",
 		"panel.border": "<%= border %>",
 		"panelTitle.activeBorder": "<%= accent %>",
 		"// Git": "//",
@@ -224,7 +231,7 @@
 		"gitDecoration.conflictingResourceForeground": "<%= conflict %>",
 		"gitDecoration.submoduleResourceForeground": "<%= submodule %>",
 		"// Terminal": "//",
-		"terminal.background": "<%= background %>",
+		"terminal.background": "<%= altBackground %>",
 		"terminal.border": "<%= border %>",
 		"terminal.foreground": "<%= altForeground %>",
 		"terminal.ansiBlack": "<%= background %>",
@@ -292,6 +299,15 @@
 				"variable"
 			],
 			"settings": {
+				"foreground": "<%= blue %>"
+			}
+		},
+		{
+			"name": "Parameters",
+			"scope": [
+				"variable.parameter"
+			],
+			"settings": {
 				"foreground": "<%= cyan %>"
 			}
 		},
@@ -325,14 +341,39 @@
 			}
 		},
 		{
-			"name": "Support",
+			"name": "Support Type",
 			"scope": [
-				"support.type",
-				"support.class",
+				"support.type"
+			],
+			"settings": {
+				"foreground": "<%= lime %>"
+			}
+		},
+		{
+			"name": "Support Constant",
+			"scope": [
+				"support.constant"
+			],
+			"settings": {
+				"foreground": "<%= pink %>"
+			}
+		},
+		{
+			"name": "Support Function",
+			"scope": [
 				"support.function"
 			],
 			"settings": {
-				"foreground": "<%= blue %>"
+				"foreground": "<%= green %>"
+			}
+		},
+		{
+			"name": "Support Property Name",
+			"scope": [
+				"support.type.property-name"
+			],
+			"settings": {
+				"foreground": "<%= cyan %>"
 			}
 		},
 		{
@@ -341,14 +382,14 @@
 				"variable.language"
 			],
 			"settings": {
-				"foreground": "<%= blue %>",
-				"fontStyle": "italic"
+				"foreground": "<%= purple %>"
 			}
 		},
 		{
 			"name": "Class, Interface",
 			"scope": [
-				"entity.name"
+				"entity.name",
+				"support.class"
 			],
 			"settings": {
 				"foreground": "<%= lime %>"
@@ -357,10 +398,11 @@
 		{
 			"name": "Decorator, Annotation",
 			"scope": [
+				"meta.decorator entity.name.function",
 				"punctuation.decorator"
 			],
 			"settings": {
-				"foreground": "<%= green %>"
+				"foreground": "<%= orange %>"
 			}
 		},
 		{
@@ -380,6 +422,15 @@
 			],
 			"settings": {
 				"foreground": "<%= purple %>"
+			}
+		},
+		{
+			"name": "Tag Attribute",
+			"scope": [
+				"entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "<%= cyan %>"
 			}
 		}
 	]
