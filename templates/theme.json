@@ -165,7 +165,7 @@
 		"editorIndentGuide.activeBackground": "<%= accentAlpha80 %>",
 		"editorRuler.foreground": "<%= border %>",
 		"editorCodeLens.foreground": "<%= submodule %>",
-		"editorLightBulb.foreground": "<%= accent %>",
+		"editorLightBulb.foreground": "<%= yellow %>",
 		"editorLightBulbAutoFix.foreground": "<%= green %>",
 		"editorBracketMatch.border": "<%= accent %>",
 		"editorError.foreground": "<%= red %>",
@@ -234,10 +234,10 @@
 		"terminal.background": "<%= altBackground %>",
 		"terminal.border": "<%= border %>",
 		"terminal.foreground": "<%= altForeground %>",
-		"terminal.ansiBlack": "<%= background %>",
-		"terminal.ansiBrightBlack": "<%= brightBackground %>",
-		"terminal.ansiWhite": "<%= altForeground %>",
-		"terminal.ansiBrightWhite": "<%= brightForeground %>",
+		"terminal.ansiBlack": "<%= foreground %>",
+		"terminal.ansiBrightBlack": "<%= brightForeground %>",
+		"terminal.ansiWhite": "<%= background %>",
+		"terminal.ansiBrightWhite": "<%= brightBackground %>",
 		"terminal.ansiBlue": "<%= blue %>",
 		"terminal.ansiBrightBlue": "<%= blue %>",
 		"terminal.ansiCyan": "<%= cyan %>",
@@ -291,6 +291,15 @@
 			],
 			"settings": {
 				"foreground": "<%= yellow %>"
+			}
+		},
+		{
+			"name": "Regex",
+			"scope": [
+				"string.regexp"
+			],
+			"settings": {
+				"foreground": "<%= orange %>"
 			}
 		},
 		{
@@ -350,6 +359,15 @@
 			}
 		},
 		{
+			"name": "Support Property Name",
+			"scope": [
+				"support.type.property-name"
+			],
+			"settings": {
+				"foreground": "<%= cyan %>"
+			}
+		},
+		{
 			"name": "Support Constant",
 			"scope": [
 				"support.constant"
@@ -365,15 +383,6 @@
 			],
 			"settings": {
 				"foreground": "<%= green %>"
-			}
-		},
-		{
-			"name": "Support Property Name",
-			"scope": [
-				"support.type.property-name"
-			],
-			"settings": {
-				"foreground": "<%= cyan %>"
 			}
 		},
 		{
@@ -421,7 +430,7 @@
 				"entity.name.tag"
 			],
 			"settings": {
-				"foreground": "<%= purple %>"
+				"foreground": "<%= green %>"
 			}
 		},
 		{
@@ -431,6 +440,45 @@
 			],
 			"settings": {
 				"foreground": "<%= cyan %>"
+			}
+		},
+		{
+			"name": "CSS Class Selectors, CSS Pseudo Selectors",
+			"scope": [
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.pseudo-class.css",
+				"punctuation.definition.entity.css",
+				"entity.name.tag.css"
+			],
+			"settings": {
+				"foreground": "<%= lime %>"
+			}
+		},
+		{
+			"name": "CSS ID Selectors",
+			"scope": [
+				"entity.other.attribute-name.id.css"
+			],
+			"settings": {
+				"foreground": "<%= orange %>"
+			}
+		},
+		{
+			"name": "CSS Attribute Names",
+			"scope":  [
+				"entity.other.attribute-name.css"
+			],
+			"settings": {
+				"foreground" : "<%= cyan %>"
+			}
+		},
+		{
+			"name": "Scss Tag Reference ('&')",
+			"scope": [
+				"entity.name.tag.reference.scss"
+			],
+			"settings": {
+				"foreground": "<%= green %>"
 			}
 		}
 	]
