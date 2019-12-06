@@ -7,7 +7,7 @@
 		"focusBorder": "<%= accent %>",
 		"background": "<%= background %>",
 		"foreground": "<%= foreground %>",
-		"selection.background": "<%= border %>",
+		"selection.background": "<%= accentAlpha80 %>",
 		"widget.shadow": "<%= shadow %>",
 		"descriptionForeground": "<%= comment %>",
 		"errorForeground": "<%= red %>",
@@ -76,7 +76,7 @@
 		"list.invalidItemForeground": "<%= red %>",
 		"list.errorForeground": "<%= red %>",
 		"list.warningForeground": "<%= orange %>",
-		"listFilterWidget.background": "<%= altBackground %>",
+		"listFilterWidget.background": "<%= background %>",
 		"listFilterWidget.outline": "<%= border %>",
 		"listFilterWidget.noMatchesOutline": "<%= border %>",
 		"list.filterMatchBackground": "<%= accent %>",
@@ -104,7 +104,7 @@
 		"minimap.findMatchHighlight": "<%= brightForeground %>",
 		"minimap.selectionHighlight": "<%= accent %>",
 		"// Editor Group": "//",
-		"editorGroup.border": "<%= altBackground %>",
+		"editorGroup.border": "<%= border %>",
 		"editorGroup.dropBackground": "<%= accentAlpha60 %>",
 		"editorGroupHeader.noTabsBackground": "<%= background %>",
 		"editorGroupHeader.tabsBackground": "<%= background %>",
@@ -133,7 +133,7 @@
 		"tab.unfocusedInactiveModifiedBorder": "<%= modifiedBackground %>",
 		"editorPane.background": "<%= background %>",
 		"// Editor": "//",
-		"editor.background": "<%= altBackground %>",
+		"editor.background": "<%= background %>",
 		"editor.foreground": "<%= altForeground %>",
 		"editorLineNumber.foreground": "<%= border %>",
 		"editorLineNumber.activeForeground": "<%= accent %>",
@@ -176,7 +176,7 @@
 		"problemsWarningIcon.foreground": "<%= orange %>",
 		"problemsInfoIcon.foreground": "<%= blue %>",
 		"editorUnnecessaryCode.opacity": "#000000c0",
-		"editorGutter.background": "<%= altBackground %>",
+		"editorGutter.background": "<%= background %>",
 		"editorGutter.modifiedBackground": "<%= modified %>",
 		"editorGutter.addedBackground": "<%= added %>",
 		"editorGutter.deletedBackground": "<%= deleted %>",
@@ -207,7 +207,7 @@
 		"titleBar.border": "<%= border %>",
 		"// Breadcrumb": "//",
 		"breadcrumb.foreground": "<%= comment %>",
-		"breadcrumb.background": "<%= altBackground %>",
+		"breadcrumb.background": "<%= background %>",
 		"breadcrumb.focusForeground": "<%= altForeground %>",
 		"breadcrumb.activeSelectionForeground": "<%= brightForeground %>",
 		"breadcrumbPicker.background": "<%= background %>",
@@ -219,7 +219,7 @@
 		"diffEditor.border": "<%= border %>",
 		"// Panel": "//",
 		"panel.foreground": "<%= foreground %>",
-		"panel.background": "<%= altBackground %>",
+		"panel.background": "<%= background %>",
 		"panel.border": "<%= border %>",
 		"panelTitle.activeBorder": "<%= accent %>",
 		"// Git": "//",
@@ -231,13 +231,13 @@
 		"gitDecoration.conflictingResourceForeground": "<%= conflict %>",
 		"gitDecoration.submoduleResourceForeground": "<%= submodule %>",
 		"// Terminal": "//",
-		"terminal.background": "<%= altBackground %>",
+		"terminal.background": "<%= background %>",
+		"terminal.foreground": "<%= foreground %>",
 		"terminal.border": "<%= border %>",
-		"terminal.foreground": "<%= altForeground %>",
 		"terminal.ansiBlack": "<%= foreground %>",
-		"terminal.ansiBrightBlack": "<%= brightForeground %>",
+		"terminal.ansiBrightBlack": "<%= altForeground %>",
 		"terminal.ansiWhite": "<%= background %>",
-		"terminal.ansiBrightWhite": "<%= brightBackground %>",
+		"terminal.ansiBrightWhite": "<%= altBackground %>",
 		"terminal.ansiBlue": "<%= blue %>",
 		"terminal.ansiBrightBlue": "<%= blue %>",
 		"terminal.ansiCyan": "<%= cyan %>",
@@ -297,6 +297,16 @@
 			"name": "Regex",
 			"scope": [
 				"string.regexp"
+			],
+			"settings": {
+				"foreground": "<%= orange %>"
+			}
+		},
+		{
+			"name": "Template Expression, String Interpolation",
+			"scope": [
+				"punctuation.definition.template-expression",
+				"punctuation.definition.interpolation"
 			],
 			"settings": {
 				"foreground": "<%= orange %>"
@@ -443,12 +453,12 @@
 			}
 		},
 		{
-			"name": "CSS Class Selectors, CSS Pseudo Selectors",
+			"name": "CSS Class Selectors, CSS Pseudo Selectors, CSS Tag Selectors, CSS Selector Entity",
 			"scope": [
 				"entity.other.attribute-name.class.css",
 				"entity.other.attribute-name.pseudo-class.css",
-				"punctuation.definition.entity.css",
-				"entity.name.tag.css"
+				"entity.name.tag.css",
+				"punctuation.definition.entity.css"
 			],
 			"settings": {
 				"foreground": "<%= lime %>"
