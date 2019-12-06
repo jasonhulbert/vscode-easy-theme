@@ -453,7 +453,7 @@
 			}
 		},
 		{
-			"name": "CSS Class Selectors, CSS Pseudo Selectors, CSS Tag Selectors, CSS Selector Entity",
+			"name": "CSS Class Selectors, CSS Pseudo Selectors, CSS Tag Selectors, CSS Selector Entity, CSS Meta Selectors",
 			"scope": [
 				"entity.other.attribute-name.class.css",
 				"entity.other.attribute-name.pseudo-class.css",
@@ -474,8 +474,9 @@
 			}
 		},
 		{
-			"name": "CSS Attribute Names",
+			"name": "CSS Attribute Selectors, CSS Attribute Names",
 			"scope":  [
+				"meta.attribute-selector",
 				"entity.other.attribute-name.css"
 			],
 			"settings": {

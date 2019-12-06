@@ -474,8 +474,9 @@
 			}
 		},
 		{
-			"name": "CSS Attribute Names",
+			"name": "CSS Attribute Selectors, CSS Attribute Names",
 			"scope":  [
+				"meta.attribute-selector",
 				"entity.other.attribute-name.css"
 			],
 			"settings": {
