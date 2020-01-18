@@ -7,6 +7,9 @@ const ejs = require('ejs');
 const themes = [{
     outFile: resolve('./', 'themes/Easy Theme - Dark.json'),
     data: require('../themes_data/dark.json')
+}, {
+    outFile: resolve('./', 'themes/Easy Theme - Light.json'),
+    data: require('../themes_data/light.json')
 }];
 
 const themeTmpl = readFileSync(resolve('./', 'templates/theme.json'), 'utf8');

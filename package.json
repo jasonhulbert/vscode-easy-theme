@@ -18,6 +18,11 @@
                 "label": "Easy Theme - Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Easy Theme - Dark.json"
+            },
+            {
+                "label": "Easy Theme - Light",
+                "uiTheme": "vs",
+                "path": "./themes/Easy Theme - Light.json"
             }
         ]
     },
