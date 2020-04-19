@@ -28,7 +28,7 @@
 		
 		"// Button Control": "//",
 		"button.background": "<%= accent %>",
-		"button.foreground": "<%= altForeground %>",
+		"button.foreground": "<%= brightBackground %>",
 		"button.hoverBackground": "<%= accent %>",
 		"checkbox.background": "<%= altBackground %>",
 		"checkbox.foreground": "<%= accent %>",
@@ -256,10 +256,10 @@
 		"terminal.background": "<%= background %>",
 		"terminal.foreground": "<%= foreground %>",
 		"terminal.border": "<%= border %>",
-		"terminal.ansiBlack": "<%= foreground %>",
+		"terminal.ansiBlack": "<%= background %>",
 		"terminal.ansiBrightBlack": "<%= altForeground %>",
-		"terminal.ansiWhite": "<%= background %>",
-		"terminal.ansiBrightWhite": "<%= altBackground %>",
+		"terminal.ansiWhite": "<%= foreground %>",
+		"terminal.ansiBrightWhite": "<%= altForeground %>",
 		"terminal.ansitheme3": "<%= theme3 %>",
 		"terminal.ansiBrighttheme3": "<%= theme3 %>",
 		"terminal.ansiCyan": "<%= theme4 %>",
@@ -308,6 +308,16 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "<%= comment %>"
+			}
+		},
+		{
+			"name": "Braces and Brackets",
+			"scope": [
+				"meta.brace",
+				"meta.bracket"
+			],
+			"settings": {
+				"foreground": "<%= altForeground %>"
 			}
 		},
 		{
@@ -374,7 +384,6 @@
 				"entity.name.function"
 			],
 			"settings": {
-				"fontStyle": "bold",
 				"foreground": "<%= theme5 %>"
 			}
 		},
@@ -412,6 +421,15 @@
 			],
 			"settings": {
 				"foreground": "<%= theme5 %>"
+			}
+		},
+		{
+			"name": "Default Variable",
+			"scope": [
+				"variable"
+			],
+			"settings": {
+				"foreground": "<%= altForeground %>"
 			}
 		},
 		{
