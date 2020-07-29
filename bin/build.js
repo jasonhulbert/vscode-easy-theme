@@ -5,11 +5,11 @@ const { resolve } = require('path');
 const ejs = require('ejs');
 
 const themes = [{
-    outFile: resolve('./', 'themes/Easy Theme - Dark.json'),
-    data: require('../themes_data/dark.json')
+    outFile: resolve('./', 'themes/Easy Night.json'),
+    data: require('../themes_data/night.json')
 }, {
-    outFile: resolve('./', 'themes/Easy Theme - Light.json'),
-    data: require('../themes_data/light.json')
+    outFile: resolve('./', 'themes/Easy Day.json'),
+    data: require('../themes_data/day.json')
 }];
 
 const themeTmpl = readFileSync(resolve('./', 'templates/theme.json'), 'utf8');

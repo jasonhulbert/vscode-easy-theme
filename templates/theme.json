@@ -41,7 +41,7 @@
 		"dropdown.foreground": "<%= altForeground %>",
 		
 		"// Input Control": "//",
-		"input.background": "<%= altBackground %>",
+		"input.background": "<%= background %>",
 		"input.border": "<%= border %>",
 		"input.foreground": "<%= altForeground %>",
 		"input.placeholderForeground": "<%= comment %>",
@@ -71,16 +71,16 @@
 		"progressBar.background": "<%= accent %>",
 		
 		"// Lists & Trees": "//",
-		"list.activeSelectionBackground": "<%= border %>",
+		"list.activeSelectionBackground": "<%= accentAlpha60 %>",
 		"list.activeSelectionForeground": "<%= brightForeground %>",
 		"list.dropBackground": "<%= accentAlpha60 %>",
-		"list.focusBackground": "<%= border %>",
+		"list.focusBackground": "<%= accentAlpha40 %>",
 		"list.focusForeground": "<%= altForeground %>",
 		"list.highlightForeground": "<%= brightForeground %>",
-		"list.hoverBackground": "<%= border %>",
+		"list.hoverBackground": "<%= accentAlpha20 %>",
 		"list.hoverForeground": "<%= foreground %>",
-		"list.inactiveSelectionBackground": "<%= border %>",
-		"list.inactiveSelectionForeground": "<%= foreground %>",
+		"list.inactiveSelectionBackground": "<%= accentAlpha40 %>",
+		"list.inactiveSelectionForeground": "<%= altForeground %>",
 		"list.inactiveFocusBackground": "<%= border %>",
 		"list.invalidItemForeground": "<%= theme7 %>",
 		"list.errorForeground": "<%= theme7 %>",
@@ -94,8 +94,8 @@
 		"// Activity Bar": "//",
 		"activityBar.background": "<%= background %>",
 		"activityBar.dropBackground": "<%= accentAlpha60 %>",
-		"activityBar.foreground": "<%= foreground %>",
-		"activityBar.inactiveForeground": "<%= comment %>",
+		"activityBar.foreground": "<%= brightForeground %>",
+		"activityBar.inactiveForeground": "<%= foreground %>",
 		"activityBar.border": "<%= border %>",
 		"activityBarBadge.background": "<%= accent %>",
 		"activityBarBadge.foreground": "<%= brightBackground %>",
@@ -107,9 +107,9 @@
 		"sideBar.foreground": "<%= foreground %>",
 		"sideBar.border": "<%= border %>",
 		"sideBar.dropBackground": "<%= accentAlpha60 %>",
-		"sideBarTitle.foreground": "<%= comment %>",
-		"sideBarSectionHeader.background": "<%= background %>",
-		"sideBarSectionHeader.foreground": "<%= foreground %>",
+		"sideBarTitle.foreground": "<%= foreground %>",
+		"sideBarSectionHeader.background": "<%= border %>",
+		"sideBarSectionHeader.foreground": "<%= brightForeground %>",
 		
 		"// Minimap": "//",
 		"minimap.findMatchHighlight": "<%= brightForeground %>",
@@ -120,23 +120,23 @@
 		"editorGroup.dropBackground": "<%= accentAlpha60 %>",
 		"editorGroupHeader.noTabsBackground": "<%= background %>",
 		"editorGroupHeader.tabsBackground": "<%= background %>",
-		"editorGroupHeader.tabsBorder": "<%= transparent %>",
+		"editorGroupHeader.tabsBorder": "<%= border %>",
 		"editorGroup.emptyBackground": "<%= background %>",
 		"editorGroup.focusedEmptyBorder": "<%= background %>",
-		"tab.activeBackground": "<%= altBackground %>",
+		"tab.activeBackground": "<%= background %>",
 		"tab.activeForeground": "<%= altForeground %>",
-		"tab.unfocusedActiveBackground": "<%= altBackground %>",
-		"tab.border": "<%= transparent %>",
-		"tab.activeBorder": "<%= altBackground %>",
-		"tab.unfocusedActiveBorder": "<%= transparent %>",
-		"tab.activeBorderTop": "<%= altBackground %>",
+		"tab.unfocusedActiveBackground": "<%= background %>",
+		"tab.border": "<%= background %>",
+		"tab.activeBorder": "<%= accent %>",
+		"tab.unfocusedActiveBorder": "<%= accentAlpha80 %>",
+		"tab.activeBorderTop": "<%= background %>",
 		"tab.unfocusedActiveBorderTop": "<%= background %>",
 		"tab.inactiveBackground": "<%= background %>",
 		"tab.inactiveForeground": "<%= comment %>",
 		"tab.unfocusedActiveForeground": "<%= comment %>",
 		"tab.unfocusedInactiveForeground": "<%= comment %>",
-		"tab.hoverBackground": "<%= altBackground %>",
-		"tab.unfocusedHoverBackground": "<%= altBackground %>",
+		"tab.hoverBackground": "<%= background %>",
+		"tab.unfocusedHoverBackground": "<%= background %>",
 		"tab.hoverBorder": "<%= transparent %>",
 		"tab.unfocusedHoverBorder": "<%= background %>",
 		"tab.activeModifiedBorder": "<%= modified %>",
@@ -148,11 +148,11 @@
 		"// Editor": "//",
 		"editor.background": "<%= altBackground %>",
 		"editor.foreground": "<%= altForeground %>",
-		"editorLineNumber.foreground": "<%= border %>",
-		"editorLineNumber.activeForeground": "<%= accent %>",
+		"editorLineNumber.foreground": "<%= comment %>",
+        "editorLineNumber.activeForeground": "<%= accent %>",
 		"editorCursor.background": "<%= accent %>",
 		"editorCursor.foreground": "<%= accent %>",
-		"editor.selectionBackground": "<%= selectionAlpha60 %>",
+		"editor.selectionBackground": "<%= selectionAlpha40 %>",
 		"editor.selectionForeground": "<%= brightForeground %>",
 		"editor.inactiveSelectionBackground": "<%= selectionAlpha20 %>",
 		"editor.selectionHighlightBackground": "<%= selectionAlpha20 %>",
@@ -168,8 +168,8 @@
 		"editor.findMatchHighlightBorder": "<%= transparent %>",
 		"editor.findRangeHighlightBorder": "<%= transparent %>",
 		"editor.hoverHighlightBackground": "<%= selectionAlpha20 %>",
-		"editor.lineHighlightBackground": "<%= brightBackground %>",
-		"editor.lineHighlightBorder": "<%= brightBackground %>",
+		"editor.lineHighlightBackground": "<%= border %>",
+		"editor.lineHighlightBorder": "<%= transparent %>",
 		"editor.rangeHighlightBackground": "<%= selectionAlpha20 %>",
 		"editor.rangeHighlightBorder": "<%= transparent %>",
 		"editorLink.activeForeground": "<%= accent %>",
@@ -183,11 +183,11 @@
 		"editorBracketMatch.border": "<%= accent %>",
 		"editorError.foreground": "<%= theme7 %>",
 		"editorWarning.foreground": "<%= theme8 %>",
-		"editorInfo.foreground": "<%= theme3 %>",
+		"editorInfo.foreground": "<%= theme1 %>",
 		"editorHint.foreground": "<%= theme4 %>",
 		"problemsErrorIcon.foreground": "<%= theme7 %>",
 		"problemsWarningIcon.foreground": "<%= theme8 %>",
-		"problemsInfoIcon.foreground": "<%= theme3 %>",
+		"problemsInfoIcon.foreground": "<%= theme1 %>",
 		"editorUnnecessaryCode.opacity": "#00000040",
 		"editorGutter.background": "<%= altBackground %>",
 		"editorGutter.modifiedBackground": "<%= modified %>",
@@ -228,7 +228,7 @@
 		"breadcrumb.background": "<%= altBackground %>",
 		"breadcrumb.focusForeground": "<%= foreground %>",
 		"breadcrumb.activeSelectionForeground": "<%= altForeground %>",
-		"breadcrumbPicker.background": "<%= background %>",
+		"breadcrumbPicker.background": "<%= altBackground %>",
 		
 		"// Diff Editor": "//",
 		"diffEditor.insertedTextBackground": "<%= addedBackground %>",
@@ -239,7 +239,7 @@
 		
 		"// Panel": "//",
 		"panel.foreground": "<%= foreground %>",
-		"panel.background": "<%= background %>",
+		"panel.background": "<%= altBackground %>",
 		"panel.border": "<%= border %>",
 		"panelTitle.activeBorder": "<%= accent %>",
 		
@@ -253,15 +253,15 @@
 		"gitDecoration.submoduleResourceForeground": "<%= submodule %>",
 		
 		"// Terminal": "//",
-		"terminal.background": "<%= background %>",
+		"terminal.background": "<%= altBackground %>",
 		"terminal.foreground": "<%= foreground %>",
 		"terminal.border": "<%= border %>",
 		"terminal.ansiBlack": "<%= background %>",
 		"terminal.ansiBrightBlack": "<%= altForeground %>",
 		"terminal.ansiWhite": "<%= foreground %>",
 		"terminal.ansiBrightWhite": "<%= altForeground %>",
-		"terminal.ansitheme3": "<%= theme3 %>",
-		"terminal.ansiBrighttheme3": "<%= theme3 %>",
+		"terminal.ansitheme1": "<%= theme1 %>",
+		"terminal.ansiBrighttheme1": "<%= theme1 %>",
 		"terminal.ansiCyan": "<%= theme4 %>",
 		"terminal.ansiBrightCyan": "<%= theme4 %>",
 		"terminal.ansiGreen": "<%= theme2 %>",
@@ -283,17 +283,17 @@
 		"// Settings": "//",
 		"settings.headerForeground": "<%= foreground %>",
 		"settings.modifiedItemIndicator": "<%= modified %>",
-		"settings.dropdownBackground": "<%= altBackground %>",
+		"settings.dropdownBackground": "<%= background %>",
 		"settings.dropdownForeground": "<%= altForeground %>",
 		"settings.dropdownBorder": "<%= border %>",
 		"settings.dropdownListBorder": "<%= border %>",
-		"settings.checkboxBackground": "<%= altBackground %>",
+		"settings.checkboxBackground": "<%= background %>",
 		"settings.checkboxForeground": "<%= accent %>",
 		"settings.checkboxBorder": "<%= border %>",
-		"settings.textInputBackground": "<%= altBackground %>",
+		"settings.textInputBackground": "<%= background %>",
 		"settings.textInputForeground": "<%= altForeground %>",
 		"settings.textInputBorder": "<%= border %>",
-		"settings.numberInputBackground": "<%= altBackground %>",
+		"settings.numberInputBackground": "<%= background %>",
 		"settings.numberInputForeground": "<%= altForeground %>",
 		"settings.numberInputBorder": "<%= border %>"
 
@@ -308,6 +308,15 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "<%= comment %>"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": [
+                "punctuation"
+			],
+			"settings": {
+				"foreground": "<%= altForeground %>"
 			}
 		},
 		{
@@ -347,13 +356,14 @@
 				"punctuation.definition.interpolation"
 			],
 			"settings": {
-				"foreground": "<%= theme8 %>"
+				"foreground": "<%= theme1 %>"
 			}
 		},
 		{
 			"name": "Constant",
 			"scope": [
-				"constant"
+				"constant",
+				"variable.other.constant"
 			],
 			"settings": {
 				"foreground": "<%= theme6 %>"
@@ -363,10 +373,11 @@
 			"name": "Keyword, Modifier",
 			"scope": [
 				"keyword",
-				"storage.modifier"
+                "storage.modifier",
+                "punctuation.definition.keyword"
 			],
 			"settings": {
-				"foreground": "<%= theme1 %>"
+				"foreground": "<%= theme3 %>"
 			}
 		},
 		{
@@ -439,7 +450,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "<%= theme1 %>"
+				"foreground": "<%= theme3 %>"
 			}
 		},
 		{
@@ -458,16 +469,6 @@
 				"entity.name.class",
 				"entity.other.inherited-class",
 				"support.class"
-			],
-			"settings": {
-				"foreground": "<%= theme3 %>"
-			}
-		},
-		{
-			"name": "Object/Class Properties",
-			"scope": [
-				"variable.other.property",
-				"variable.other.object.property"
 			],
 			"settings": {
 				"foreground": "<%= theme1 %>"

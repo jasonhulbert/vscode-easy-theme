@@ -15,14 +15,14 @@
     "contributes": {
         "themes": [
             {
-                "label": "Easy Theme - Dark",
+                "label": "Easy Night",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Easy Theme - Dark.json"
+                "path": "./themes/Easy Night.json"
             },
             {
-                "label": "Easy Theme - Light",
+                "label": "Easy Day",
                 "uiTheme": "vs",
-                "path": "./themes/Easy Theme - Light.json"
+                "path": "./themes/Easy Day.json"
             }
         ]
     },
